@@ -1,0 +1,51 @@
+/*绑定发牌动画的块设定*/
+.send-card1 {
+    animation: sendCardTo1 1s ease 1;
+    position:absolute;
+    /* top:0; */
+}
+.send-card2 {
+    animation: sendCardTo2 1s ease 1;
+    position:absolute;
+}
+/*由发牌区发牌至候牌区并伴随翻转（）*/
+@keyframes sendCardTo1 
+{
+	0% { right:-450px;top: 30px; transform: rotate(240deg); }
+	100% { right: 0; transform: rotate(0); }
+}
+@keyframes sendCardTo2 
+{
+	0% { right:-220px; top:30px; transform: rotate(240deg); }
+	100% { right: 0; top:0; transform: rotate(0); }
+}
+@-moz-keyframes sendCardTo1 /* Firefox */
+{
+    0% { right:-450px;top: 30px; transform: rotate(240deg); }
+    100% { right: 0; transform: rotate(0); }
+}
+@-moz-keyframes sendCardTo2 /* Firefox */
+{
+    0% { right:-220px; top:30px; transform: rotate(240deg); }
+    100% { right: 0; top:0; transform: rotate(0); }
+}
+@-webkit-keyframes sendCardTo1 /* Safari 和 Chrome */
+{
+    0% { right:-450px;top: 30px; transform: rotate(240deg); }
+    100% { right: 0; transform: rotate(0); }
+}
+@-webkit-keyframes sendCardTo2 /* Safari 和 Chrome */
+{
+    0% { right:-220px; top:30px; transform: rotate(240deg); }
+    100% { right: 0; top:0; transform: rotate(0); }
+}
+@-o-keyframes sendCardTo1 /* Opera */
+{
+    0% { right:-450px;top: 30px; transform: rotate(240deg); }
+    100% { right: 0; transform: rotate(0); }
+}
+@-o-keyframes sendCardTo2 /* Opera */
+{
+    0% { right:-220px; top:30px; transform: rotate(240deg); }
+    100% { right: 0; top:0; transform: rotate(0); }
+}

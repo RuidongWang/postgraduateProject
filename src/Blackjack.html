@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <title>The BlackJack(21)</title>
+    <link rel=stylesheet href="css/blackjack.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+    <header id="logo"><!-- logo及游戏名称部分 -->
+        <img src="images/Logo.png" alt="logo" />      
+        <h1>BlackJack(21)</h1>
+    </header>
+    <section><!-- 游戏主体部分 -->
+        <div id="table">
+            <div>
+                <img src="images/back.png" alt="发牌" class="send" id="send" onclick="getCard()">
+            </div> <!-- 发牌区 -->
+            <div><!-- 候牌区1 -->
+                <div id="p_1"><p style="color: white"></p>
+                    <div id="player1"><!-- 候牌区占位符1 -->
+                        <p class="point">NaN</p>
+                    </div>
+                </div>
+            </div>
+            <div><!-- 候牌区1 -->
+                <div id="p_2">
+                    <p style="color: white"></p>
+                    <div id="player2"><!-- 候牌区占位符2 -->
+                    </div> 
+                </div>
+            </div>
+            <div id="btns"><!-- 操作按钮们 -->
+                    <div id="btnSend"><p>start</p></div><!-- 新游戏按钮 -->
+                    <div id="addCard"><p>Hit</p></div><!-- 要牌按钮 -->
+                    <div id="showCard"><p>Stand</p></div><!-- 亮牌按钮 -->
+                    <div id="exit"><p>exit</p></div><!-- 退出按钮 -->
+            </div>
+        </div>
+    </section>
+    <footer>
+            <p id="account">account</p>
+    </footer>
+    <!--加载js, 放在最后是为了加快网页加载速度--> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/blackjack.js"></script>
+</body>
+</html>
